@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  cli:
+    build:
+      context: .
+      args:
+        - UID
+        - GID
+        - USERNAME
+    image: php71-cli-exec
